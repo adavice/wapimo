@@ -157,7 +157,7 @@ img {
 	z-index: 99999;
 	min-height: 87px;
 	background: #fff;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.31);
+	box-shadow: 0px 4px 4px rgb(24, 0, 108, 0.25);
 	background-repeat: repeat-x;
 	border: none;
 	border-radius: 0;
@@ -536,17 +536,18 @@ ul.callbacks_tabs.callbacks1_tabs {
 /*--new games--*/
 .button {
 	font-weight: 600;
-	background: #FF9E0D;
-	color: rgba(24, 0, 108, 1);
+	color: #0828B8;
 	margin: 20px auto 30px;
 	padding: 8px;
-	border-radius: 20px;
+	border-radius: 10px;
+	font-weight: bold;
 	display: block;
 	min-width: 100px;
 	max-width: 220px;
 	text-align: center;
-	box-shadow: 0 5px 5px #00000033;
 	min-width: 100px;
+	background: linear-gradient(90deg, #FFE34F 0%, #FF9B21 100%);
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 
 .button.underline {
@@ -601,7 +602,7 @@ form .row {
 }
 
 .button:hover {
-	background: #FF9E0D;
+	background: linear-gradient(90deg, #23B6FC 0%, #1B88BC 100%);
 	color: #fff;
 }
 
@@ -927,9 +928,10 @@ a.learn:active {
 
 /*-- //footer --*/
 .footer {
-	padding: 35px 0px;
+	padding: 50px 0px;
 	color: var(--text-color);
-	margin-top: 50px;
+	margin-top: 0px;
+	box-shadow: 0px 0px 10px rgba(0, 26, 91, 0.5);
 }
 
 .footer .links {
@@ -1087,7 +1089,6 @@ p.agileinfo {
 
 .framed {
 	color: var(--main-text);
-	border: 1px solid var(--primary);
 	padding: 20px;
 	border-radius: 20px;
 	margin-bottom: 10px;
@@ -1147,14 +1148,16 @@ input::-webkit-inner-spin-button {
 }
 
 .button.btn-secondary {
-	background: #FF9E0D;
-	color: rgba(24, 0, 108, 1);
-	border-radius: 20px;
+	background: linear-gradient(90deg, #FFE34F 0%, #FF9B21 100%);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+	color: #0828B8;
+	border-radius: 10px;
 	border: none;
 }
 
 .button.btn-secondary:hover {
 	color: #fff;
+	background: linear-gradient(90deg, #23B6FC 0%, #1B88BC 100%);
 }
 
 .contact-agileinfo {
@@ -1727,7 +1730,15 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 
 /*-- gallery --*/
 .gallery-ltpwrlayouts {
-	background-color: var(--ambient_grad);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 50px 0;
+	margin-top: 0;
+	background-image: url(../images/static_bg.png);
+}
+
+.gallery-ltpwrlayouts h2 {
+	color: #fff;
 }
 
 .gallery-grids {
@@ -2146,14 +2157,14 @@ a.blog-read:hover {
 
 .contact-right-ltpwr input.text,
 .contact-right-ltpwr textarea {
-	width: 48.6%;
+	width: 100%;
 	float: left;
 	margin: 0 10px 25px 0;
 	padding: 15px 10px;
-	background-color: transparent;
-	border: 1px solid rgba(24, 0, 108, 1);
+	background-color: #ffffff6b;
+	border: none;
+	border-bottom: 1px solid rgba(24, 0, 108, 1);
 	outline: transparent;
-	border-radius: 20px;
 }
 
 .contact-right-ltpwr textarea {
@@ -2163,17 +2174,21 @@ a.blog-read:hover {
 
 .contact-right-ltpwr input.more_btn {
 	float: right;
-	padding: 7px 15px;
+	padding: 15px;
 	outline: transparent;
 	border: none;
-	border-radius: 20px;
-	background: #FF9E0D;
-	color: rgba(24, 0, 108, 1);
-	box-shadow: 0 5px 5px #00000033;
+	border-radius: 15px;
+	color: #0828B8;
+	background: linear-gradient(90deg, #FFE34F 0%, #FF9B21 100%);
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+	font-size: 18px;
+	font-weight: bold;
+	width: 100%;
 }
 
 .contact-right-ltpwr input.more_btn:hover {
 	color: #FFf;
+	background: linear-gradient(90deg, #23B6FC 0%, #1B88BC 100%);
 }
 
 ::-webkit-input-placeholder {
@@ -2304,14 +2319,13 @@ a.blog-read:hover {
 .wthree_blog_left_grid p {
 	text-align: left;
 	line-height: 27px;
-	color: #999;
+	color: rgba(24, 0, 108, 1);
 	font-size: 14px;
 }
 
 .wthree_blog_left_grid p i {
 	display: block;
 	margin: 1em 0;
-	color: #999;
 	text-align: left;
 }
 
@@ -2377,11 +2391,11 @@ a.blog-read:hover {
 select {
 	width: 100%;
 	padding: 10px;
-	border: 1px solid var(--primary);
 	margin-bottom: 10px;
-	background: transparent;
-	outline: none;
-	border-radius: 20px;
+	background-color: #ffffff6b;
+    border: none;
+    border-bottom: 1px solid rgba(24, 0, 108, 1);
+    outline: transparent;
 }
 
 .agileits_reply input[name="expMonth"],
@@ -2422,26 +2436,30 @@ select:focus {
 .agileits_reply textarea {
 	width: 100%;
 	padding: 10px;
-	border: 1px solid var(--primary);
 	margin-bottom: 15px;
 	height: 150px;
 	resize: none;
-	background: transparent;
-	outline: none;
-	border-radius: 20px;
+
+    background-color: #ffffff6b;
+    border: none;
+    border-bottom: 1px solid rgba(24, 0, 108, 1);
+    outline: transparent;
 }
 
 .agileits_reply input[type="submit"] {
 	padding: 10px 35px;
 	outline: none;
 	min-width: 200px;
-	background: #FF9E0D;
-	color: rgba(24, 0, 108, 1);
 	border: none;
+	background: linear-gradient(90deg, #FFE34F 0%, #FF9B21 100%);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    color: #0828B8;
+    border-radius: 10px;
 }
 
 .agileits_reply input[type="submit"]:hover {
 	color: #fff;
+	background: linear-gradient(90deg, #23B6FC 0%, #1B88BC 100%);
 }
 
 .ltpwrls_search input[type="text"] {
@@ -3606,15 +3624,6 @@ h2.terms_title {
 		float: left;
 	}
 
-	.contact-right-ltpwr {
-		width: 66.6%;
-		float: left;
-	}
-
-	.contact-right-ltpwr input.text {
-		width: 47.7%;
-	}
-
 	.map iframe {
 		width: 100%;
 		height: 350px;
@@ -3820,10 +3829,6 @@ h2.terms_title {
 
 	.item_info ul li {
 		margin-right: 14px;
-	}
-
-	.contact-right-ltpwr input.text {
-		width: 47.6%;
 	}
 
 	.ltpwrls_search input[type="submit"] {
@@ -4913,6 +4918,8 @@ h2.terms_title {
 
 .img-responsive {
 	border-radius: 20px;
+	box-shadow: 0px 0px 10px 0px #001A5B80;
+	border: 2px solid #6F98FD;
 }
 
 .view-eighth img {
@@ -5235,6 +5242,8 @@ h2.terms_title {
 
 .img-game {
 	width: 60%;
+	border: 2px solid #6F98FD;
+	box-shadow: 0px 0px 10px 0px #001a5b80;
 }
 
 .for_form {
@@ -5259,6 +5268,7 @@ h2.terms_title {
 	background: url(../images/background.png), linear-gradient(180deg, #0828B8 0%, #366AEC 60.4%);
 	box-shadow: 0px 0px 4px 0px #00000040;
 	background-size: cover;
+	padding-bottom: 50px;
 }
 
 .links a {
@@ -5271,7 +5281,7 @@ h2.terms_title {
 
 @media screen and (max-width: 992px) {
 	.navbar-header img {
-		width: 180px;
+		width: 170px;
 	}
 
 	.slider-img {
@@ -5400,4 +5410,83 @@ h2.terms_title {
 	border-radius: 30px;
 	height: 100%;
 	padding: 0 15px;
+}
+
+.game .blog {
+	background: url(../images/white_bg.png), #fff;
+	background-size: cover;
+	margin-top: 0;
+	padding: 50px 0;
+}
+
+.contactus .contact-agileinfo {
+	padding: 50px 0;
+	margin-top: 0;
+	background: url(../images/white_bg.png), #fff;
+	background-size: cover;
+}
+
+.contactus form {
+	width: 50%;
+	display: block;
+	margin: auto;
+}
+
+@media screen and (max-width: 991px) {
+	.contactus form {
+		width: 90%;
+		display: block;
+		margin: auto;
+	}
+}
+
+.policy .about-agileinfo,
+.term .about-agileinfo {
+	background: url(../images/white_bg.png), #fff;
+	background-size: cover;
+}
+
+.policy h2,
+.term h2,
+.policy p,
+.term p,
+.policy h4,
+.term h4,
+.policy ul,
+.term ul {
+	color: #0828B8;
+}
+
+
+.login_page .contact-agileinfo {
+	background: url(../images/white_bg.png), #fff;
+	background-size: cover;
+	padding: 50px 0;
+	margin-top: 0;
+}
+
+.login_page .form-control {
+	background-color: #ffffff6b;
+	border: none;
+	border-bottom: 1px solid rgba(24, 0, 108, 1);
+	border-radius: 0;
+	width: 50%;
+	display: block;
+	margin: auto;
+	margin-top: 15px;
+}
+
+@media screen and (max-width: 991px) {
+	.login_page .form-control {
+		width: 90%;
+	}
+}
+
+.profile_page .block_question{
+	padding-bottom: 50px;
+}
+
+.signUp .blog,
+.single .blog{
+	padding-bottom: 50px;
 }
