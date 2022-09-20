@@ -1761,7 +1761,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 
 .tips .gallery-grid {
 	float: left;
-	width: calc(50% - 1em);
+	width: calc(33% - 1em);
 	margin: 0.5em;
 	border-radius: 20px;
 }
@@ -2037,7 +2037,7 @@ form .form-hint b {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 18px;
 	color: var(--text-color);
-	text-transform: lowercase;
+	text-transform: uppercase;
 }
 
 .navbar:hover #navbar>ul>li>a {
@@ -5075,9 +5075,12 @@ h2.terms_title {
 	}
 }
 
-.tips .new-grid-ltpwrl img,
 .games .new_games_img {
 	height: 315px;
+}
+
+.tips .new-grid-ltpwrl img{
+	height: 200px;
 }
 
 .games .img-responsive .zoom-img img {
@@ -5085,11 +5088,13 @@ h2.terms_title {
 }
 
 @media screen and (max-width:1200px) {
-
 	.new-grid-ltpwrl img,
-	.tips .new-grid-ltpwrl img,
 	.games .new_games_img {
 		height: 220px;
+	}
+
+	.tips .new-grid-ltpwrl img{
+		height: 180px;
 	}
 
 	.all_games .new-grid-ltpwrl img {
