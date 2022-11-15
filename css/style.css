@@ -5376,11 +5376,11 @@ h2.terms_title {
 .quiz .submit_quiz {
 	font-size: 20px;
 	font-weight: 700;
-	line-height: 20px;
 	letter-spacing: 0em;
 	text-align: left;
-	color: #00F68F;
-	text-shadow: 2px 1px 5px #00f68f;
+	background-image: linear-gradient(90deg, #FFE34F 0%, #FF9B21 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .quiz .block_with_logo {
