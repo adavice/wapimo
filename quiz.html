@@ -56,7 +56,7 @@
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="hover-effect active"><a href="index.html">Home</a></li>
-						 <li class="hover-effect" style="display: none;"><a href="about.html">About</a></li>
+						<li class="hover-effect" style="display: none;"><a href="about.html">About</a></li>
 						<li class="hover-effect"><a href="games.html">Games</a></li>
 
 						<li class="hover-effect"><a href="tips-1.html"> Tips</a></li>
@@ -97,23 +97,30 @@
 									<div class="row">
 										<div class="form-group">
 											<div class="radio_box">
-												<input type="radio" class="form-control required input form-input"
+												<input type="radio"
+													class="form-control required input form-input incorrect"
 													name="quiz-question" id="for-quiz-question-1">
-												<label for="for-quiz-question-1">Elbrus</label>
+												<label class="incorrect" for="for-quiz-question-1">Elbrus</label>
 											</div>
-											<div class="radio_box">
+											<div class="radio_box" style="display: none;">
 												<input type="radio" class="form-control required input form-input"
 													name="quiz-question" id="for-quiz-question-2">
 												<label for="for-quiz-question-2">Mauna Kea</label>
 											</div>
 											<div class="radio_box">
-												<input type="radio" class="form-control required input form-input"
+												<input type="radio"
+													class="form-control required input form-input correct"
 													name="quiz-question" id="for-quiz-question-3">
-												<label for="for-quiz-question-3">Everest</label>
+												<label class="correct" for="for-quiz-question-3">Everest</label>
 											</div>
 										</div>
-										<p class="submit_quiz">Your answer is submitted</p>
-										<div class="block_with_logo">
+										<p class="submit_quiz" style="display: none;">Your answer is submitted</p>
+										<p class="submit_quiz question" style="display: none;">Please choose your answer
+										</p>
+										<div class="block_with_logo submit">
+											<a class="learn answer_question">Submit</a>
+										</div>
+										<div class="block_with_logo go_to_main" style="display: none;">
 											<a href="index.html" class="learn">Go to main page</a>
 										</div>
 									</div>
@@ -168,6 +175,37 @@
 			</div>
 		</div>
 	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+		integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+		$(".answer_question").click(function () {
+			
+			if ($('#for-quiz-question-1').is(':checked') === false && $('#for-quiz-question-2').is(':checked') === false ) {
+				$(".question").show();
+			}
+			
+			if ($('#for-quiz-question-1').is(':checked') === true) {			
+				$(".incorrect").css('color', '#c4c4c4');				
+				$(".submit_quiz").show();
+				$(".question").hide();
+				$(".answer_question").hide();
+				$(".go_to_main").show();
+			}
+
+			if ($('#for-quiz-question-3').is(':checked') === true) {
+				debugger
+				$(".correct").css('color', '#00F68F');
+				$(".submit_quiz").show();
+				$(".question").hide();
+				$(".answer_question").hide();
+				$(".go_to_main").show();
+			}
+
+		});
+	</script>
+
 	<!-- //footer -->
 </body>
 

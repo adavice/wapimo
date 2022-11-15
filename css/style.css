@@ -1149,7 +1149,7 @@ input::-webkit-inner-spin-button {
 
 .button.btn-secondary {
 	background: linear-gradient(90deg, #FFE34F 0%, #FF9B21 100%);
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 	color: #0828B8;
 	border-radius: 10px;
 	border: none;
@@ -2393,9 +2393,9 @@ select {
 	padding: 10px;
 	margin-bottom: 10px;
 	background-color: #ffffff6b;
-    border: none;
-    border-bottom: 1px solid rgba(24, 0, 108, 1);
-    outline: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(24, 0, 108, 1);
+	outline: transparent;
 }
 
 .agileits_reply input[name="expMonth"],
@@ -2440,10 +2440,10 @@ select:focus {
 	height: 150px;
 	resize: none;
 
-    background-color: #ffffff6b;
-    border: none;
-    border-bottom: 1px solid rgba(24, 0, 108, 1);
-    outline: transparent;
+	background-color: #ffffff6b;
+	border: none;
+	border-bottom: 1px solid rgba(24, 0, 108, 1);
+	outline: transparent;
 }
 
 .agileits_reply input[type="submit"] {
@@ -2452,9 +2452,9 @@ select:focus {
 	min-width: 200px;
 	border: none;
 	background: linear-gradient(90deg, #FFE34F 0%, #FF9B21 100%);
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-    color: #0828B8;
-    border-radius: 10px;
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+	color: #0828B8;
+	border-radius: 10px;
 }
 
 .agileits_reply input[type="submit"]:hover {
@@ -5079,7 +5079,7 @@ h2.terms_title {
 	height: 315px;
 }
 
-.tips .new-grid-ltpwrl img{
+.tips .new-grid-ltpwrl img {
 	height: 200px;
 }
 
@@ -5088,12 +5088,13 @@ h2.terms_title {
 }
 
 @media screen and (max-width:1200px) {
+
 	.new-grid-ltpwrl img,
 	.games .new_games_img {
 		height: 220px;
 	}
 
-	.tips .new-grid-ltpwrl img{
+	.tips .new-grid-ltpwrl img {
 		height: 180px;
 	}
 
@@ -5373,12 +5374,13 @@ h2.terms_title {
 }
 
 .quiz .submit_quiz {
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 700;
 	line-height: 20px;
 	letter-spacing: 0em;
 	text-align: left;
 	color: #00F68F;
+	text-shadow: 2px 1px 5px #00f68f;
 }
 
 .quiz .block_with_logo {
@@ -5483,11 +5485,11 @@ h2.terms_title {
 	}
 }
 
-.profile_page .block_question{
+.profile_page .block_question {
 	padding-bottom: 50px;
 }
 
 .signUp .blog,
-.single .blog{
+.single .blog {
 	padding-bottom: 50px;
 }
