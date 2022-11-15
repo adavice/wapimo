@@ -89,32 +89,31 @@
 						<div class="trend-grid col-lg-5 col-12">
 							<p>Here is your weekly trivia question!</p>
 							<h4>Choose correct answer</h4>
-							<h3>
+							<h3 class="before_quiz">
 								What is the highest mountain above sea level in the world?
 							</h3>
 							<form id="" role="form">
 								<div class="row">
 									<div class="row">
-										<div class="form-group">
+										<div class="form-group before_quiz">
 											<div class="radio_box">
 												<input type="radio"
-													class="form-control required input form-input incorrect"
+													class="form-control required input form-input quiz-question"
 													name="quiz-question" id="for-quiz-question-1">
-												<label class="incorrect" for="for-quiz-question-1">Elbrus</label>
-											</div>
-											<div class="radio_box" style="display: none;">
-												<input type="radio" class="form-control required input form-input"
-													name="quiz-question" id="for-quiz-question-2">
-												<label for="for-quiz-question-2">Mauna Kea</label>
+												<label for="for-quiz-question-1">Elbrus</label>
 											</div>
 											<div class="radio_box">
 												<input type="radio"
-													class="form-control required input form-input correct"
+													class="form-control required input form-input quiz-question"
 													name="quiz-question" id="for-quiz-question-3">
-												<label class="correct" for="for-quiz-question-3">Everest</label>
+												<label for="for-quiz-question-3">Everest</label>
 											</div>
 										</div>
-										<p class="submit_quiz" style="display: none;">Your answer is submitted</p>
+										<div class="form-group after_quiz" style="display: none;">
+											<h3>Thanks!</h3>
+											<h3>Your answer was submitted to participate in the trivia
+												quiz!</h3>
+										</div>
 										<p class="submit_quiz question" style="display: none;">Please choose your answer
 										</p>
 										<div class="block_with_logo submit">
@@ -181,28 +180,17 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script>
 		$(".answer_question").click(function () {
-			
-			if ($('#for-quiz-question-1').is(':checked') === false && $('#for-quiz-question-2').is(':checked') === false ) {
+			if ($('.quiz-question').is(':checked')) {
+				$(".question").hide();
+				$(".before_quiz").hide();
+				$(".after_quiz").show();
+				$(".answer_question").hide();
+				$(".go_to_main").show();
+			}
+
+			if ($('.quiz-question').is(':checked') === false) {
 				$(".question").show();
 			}
-			
-			if ($('#for-quiz-question-1').is(':checked') === true) {			
-				$(".incorrect").css('color', '#c4c4c4');				
-				$(".submit_quiz").show();
-				$(".question").hide();
-				$(".answer_question").hide();
-				$(".go_to_main").show();
-			}
-
-			if ($('#for-quiz-question-3').is(':checked') === true) {
-				debugger
-				$(".correct").css('color', '#00F68F');
-				$(".submit_quiz").show();
-				$(".question").hide();
-				$(".answer_question").hide();
-				$(".go_to_main").show();
-			}
-
 		});
 	</script>
 
