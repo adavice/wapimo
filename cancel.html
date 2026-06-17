@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Login</title>
+	<title>Cancel Membership</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<!-- Google Tag Manager -->
@@ -22,19 +22,16 @@
 	<script
 		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<link rel="icon" type="image/png" href="./favicon.svg" />
-	<!-- css -->
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<!--// css -->
-	<!-- font -->
 
-	<!-- //font -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/login.js"></script>
 </head>
 
-<body class="login_page">
+<body class="login_page cancel">
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVZPCLL" height="0" width="0"
 			style="display:none;visibility:hidden"></iframe></noscript>
@@ -57,10 +54,9 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="hover-effect"><a href="index.html">Home</a></li>
-						 <li class="hover-effect" style="display: none;"><a href="about.html">About</a></li>
+						<li class="hover-effect active"><a href="index.html">Home</a></li>
+						<li class="hover-effect" style="display: none;"><a href="about.html">About</a></li>
 						<li class="hover-effect"><a href="games.html">Games</a></li>
-						 
 						<li class="hover-effect"><a href="tips-1.html"> Tips</a></li>
 						<li class="hover-effect"><a href="contactus.html">Contact</a></li>
 						<li class="hover-effect"><a href="cancel.html">Cancel subscription</a>
@@ -85,15 +81,21 @@
 
 	<div class="contact-agileinfo">
 		<div class="container">
-			<h2>Login</h2>
+			<h2>Automatic Membership Cancellation</h2>
+			<p style="text-align: center;">
+				Jos haluat hyvityksen, ota yhteyttä osoitteeseen <span
+				style="color: var(--bright)">withdrawal.fi@silverlines.info</span>.
+			</p>
 
-			<div class="col-md-12 contact-right-ltpwr framed">
-				<p class="form_descr">Enter the mobile number you provided during registration, which serves as your
-					username, and your password. If you forgot your password, please contact us.</p>
-				<form id="" role="form">
+			<h3 style="margin: 50px auto 30px">To cancel your subscription please:</h3>
+			<div class="col-md-12 contact-right-ltpwr framed" style="max-width: 720px; margin: auto; float: none">
+				<p class="form_descr" style="color: var(--bright); text-align: center">Enter your mobile number, which serves as your username, and your email*.</p>
+				<p class="form_descr" style="font-size: 11px;">*We request your email address to verify your subscription and confirm subscription cancellation.</p>
+				<form id="home-option1-form" role="form">
 					<div class="row">
 						<div class="row">
-							<div class="form-group col-sm-12">						
+							<div class="form-group col-sm-4">
+								<label for="home-option1-phone-input">Mobile number</label>
 								<div>
 									<input type="tel" class="form-control required input form-input"
 										name="home-option1-phone-input" id="home-option1-phone-input"
@@ -101,25 +103,28 @@
 								</div>
 							</div>
 
-							<div class="form-group col-sm-12">
+							<div class="form-group col-sm-4">
+								<label for="home-option1-email-input">Email</label>
 								<div>
-									<input type="password" class="form-control required input form-input"
-										name="home-option1-password-input" id="home-option1-password-input"
-										placeholder="Password" required="">
+									<input type="email" class="form-control required input form-input"
+										name="home-option1-email-input" id="home-option1-email-input"
+										placeholder="Email" required="">
 								</div>
 							</div>
-							<div class="form-group col-sm-12">
+
+							<div class="form-group col-sm-4">
 								<div class=" form-group-submit-btn">
 									<button id="home-option1-submit-btn" type="submit" class="btn btn-primary button">
-										Login
+										Peruuta
 									</button>
 								</div>
 							</div>
+
+
 						</div>
 					</div>
 				</form>
 			</div>
-
 			<div class="clearfix"></div>
 		</div>
 	</div>

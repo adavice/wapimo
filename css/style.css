@@ -5497,3 +5497,8 @@ h2.terms_title {
 .after_quiz h3{
 	font-size: 30px;
 }
+
+.login_page.cancel .form-control{
+	width: 100%;
+	box-shadow: none;
+}
